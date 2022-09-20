@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Practice 1</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="container">
+      <h1>Agregar Personas a la lista</h1>
+      <br>
+      <div class="mb-2">
+        <input type="text" class="form" placeholder="Name" aria-label="Username" v-model="name">
+        <input type="text" class="form" placeholder="Age" aria-label="Server" v-model="age">
+      </div>
+      <button class="btn btn-primary" @click="agregar">Agregar</button>
+      <br>
+      <br>
+
+      <table class="table border">
+        <thead>
+          <tr>
+            <th class="border">Nombre</th>
+            <th class="border">Edad</th>
+            <th class="border">Opciones</th>
+          </tr>
+        </thead>
+        <tbody v-if="data.length">
+          <tr v-for="(item,index) in data" :key="item.id">
+            <td class="border">{{item.name}}</td>
+            <td class="border">{{item.age}}</td>
+            <td class="border"><button class="btn btn-danger" @click="deleteItem(index)" type="button">eliminar</button></td>
+          </tr>
+        </tbody>
+        <tbody v-else>
+          <tr>
+            <td colspan="3">no existe usuarios</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+  
+  </div>
+
+  <script src="js/vue.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Practice 1</title>
+  </head>
+  <body>
+    <div id="app" >
+      <!-- v-text mostrat datos v-model asignar nombres -->
+      <h1>{{rta}}</h1>
+      <input type="number" v-model="num_1">
+      <input type="number" v-model="num_2">
+      <br>
+      <br>
+      <button @click="sumar" class="btn btn-primary">Sumar +</button>
+      <button @click="restar" class="btn btn-info">Restar -</button>
+      <button @click="multiplicar" class="btn btn-success">Multiplicar *</button>
+      <button @click="dividir" class="btn btn-warning">Dividir</button>
+      <button @click="limpiar" class="btn btn-danger">Limpiar</button>
+    </div>
+    
+
+
+
+  <script src="/js/vue.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+:root{
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+  --blue-teal:#008080;
+  --blue-teal-secondary: #0374749b;
+  --blue-acero:#6aa1be;
+  --blue-acero-socondary: #1f4e67;
+  --white:#FFFFFF;
+  --black:#0E0E0E;
+}
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--white);
+}
+body{
+  background: var(--blue-teal);
+}
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header-button button{
+  background: var(--blue-teal-secondary);
+  font-size: var(--md);
+  font-weight: var(--lg);
+  width: 120px;
+  height: 50px;
+  border-radius: 4px;
+  margin-left: 6px;
+  border: none;
+}
+button:active{
+  color: var(--black);
+}
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.form{
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  width: 1000px;
+}
+.form section input{
+  border-radius: 10px 0 0 10px;
+  border: none;
+  margin-top: 4px;
+}
+.form section{
+  width: 50%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.button-form{
+  background: none;
+  font-size: var(--md);
+  font-weight: var(--lg);
+  width: 120px;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: solid;
+}
+/* Cards */
+.cards{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card{
+  margin: 4px 4px 4px 4px;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  border-radius: 8px;
+  height: 200px;
+  background: var(--blue-acero-socondary);
+  border: solid;
+}
+
+.card-img{
+  display: flex;
+  justify-content: center;
+  border: solid;
+  background-color: var(--blue-acero);
+  border-radius: 100%;
+  margin-top: 4px;
+}
+.card-label{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card section img{
+  max-width: 100px ;
+}
+/* carta */
